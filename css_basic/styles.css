@@ -2,12 +2,27 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    height: 100vh; 
+    height: 100vh;
+    font-family: Arial, sans-serif; 
+    background-color: #f9f9f9; 
+    color: #333; 
+  }
+  header {
+  background-color: #626468; 
+  color: white; 
+  }
+  header ul li {
+  cursor: pointer;
+  }
+  header .logo {
+  font-size: 1.5rem;
+  font-weight: bold; 
   }
   main {
     display: flex;
     flex-direction: row; 
-    flex: auto; 
+    flex: auto;
+    background-color: white; 
   }
   article {
     flex: 2; 
@@ -18,4 +33,10 @@ body {
     flex: 1; 
     overflow-y: auto; 
     padding: 1rem; 
+    background-color: #f1f1f1; /* Light gray background */
+    border: 1px solid #ddd; /* Add border */
+  }
+  footer {
+  background-color: #0056b3; 
+  color: white;   
   }
