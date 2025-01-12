@@ -1,1 +1,26 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url(../fonts/Quicksand-Regular.ttf);
+}
+@font-face {
+  font-family: "Quicksand Medium";
+  src: url(../fonts/Quicksand-Medium.ttf);
+}
 
+body {
+  font-family: "Quicksand";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Quicksand Medium";
+}
+p,
+button,
+span,a {
+  font-size: 15px;
+}
