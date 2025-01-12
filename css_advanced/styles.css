@@ -1,1 +1,412 @@
+@import url(typography.css);
+@import url(buttons.css);
+@import url(media.css);
+/* Resets */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  min-height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.096),
+      rgba(17, 17, 46, 0.781)
+    ),
+    url("../img/Object.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 250px;
+}
+header .navbar .navbar__links {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+}
+header .navbar .navbar__links .navbar__link:not(:first-child) {
+  margin-left: 20px;
+}
+
+header .navbar .navbar__links .navbar__link a {
+  text-decoration: none;
+  color: #fff;
+}
+.header__content {
+  padding: 40px 100px 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__content .main__heading {
+  color: #fff;
+  font-size: 70px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.header__content .header__text {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.header__text__container {
+  display: flex;
+}
+.header__text__container .header__text {
+  margin-inline: 8px;
+}
+.catchy__text {
+  color: #fff;
+  font-size: 25px;
+  margin-top: 160px;
+}
+.catchy__text span {
+  color: #c372ff;
+  font-family: "Quicksand Medium";
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.props__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 60px;
+  justify-items: center;
+  gap: 20px;
+}
+.props__list .prop .prop__image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.props__list .prop:not(:last-child) {
+  margin-right: 60px;
+}
+.props__list .prop .prop__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.props__list .prop {
+  text-align: center;
+}
+.props__list .prop .prop__details {
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
+.props__list .prop .prop__details .prop__name {
+  font-weight: bold;
+}
+.props__list .prop .prop__details span {
+  display: block;
+  opacity: 0.8;
+  font-size: 14px;
+}
+/* Quote Section */
+.quote__section {
+  background: #c372ff;
+  color: #fff;
+  display: flex;
+  gap: 30px;
+  /* justify-content: space-between; */
+  padding: 80px 250px;
+}
+.quote__section .double__angle__icon {
+  font-size: 10px;
+}
+.quote__section .image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.quote__section .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.quote__section .qoute__content__person {
+  margin-top: 30px;
+}
+/* Popular Section */
+.popular__section {
+  padding: 80px 250px;
+}
+.popular__section .popular__title {
+  font-size: 30px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.popular__section .popular__title span {
+  font-size: 30px;
+  color: #c372ff;
+}
+.popular__section .popular__cards {
+  display: grid;
+  gap: 20px;
+  /* justify-content: space-between; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.popular__cards .card .card__body .card__title {
+  font-weight: bolder;
+  margin-bottom: 6px;
+}
+.popular__cards .card .card__body .card__content {
+  font-size: 13px;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+.popular__cards .card .card__body .card__author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: bolder;
+  color: #c372ff;
+}
+.popular__cards .card .card__body .card__author .author__image img {
+  width: 40px;
+}
+.popular__cards .card .card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular__cards .card .card__footer .time {
+  font-size: 13px;
+  color: #c372ff;
+  font-weight: bold;
+}
+.popular__cards .card .card__body {
+  padding: 10px 0;
+}
+.popular__section .popular__cards .card .card__image {
+  height: 180px;
+
+  position: relative;
+  border-radius: 4px;
+}
+.popular__section .popular__cards .card .card__image .card__play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.popular__section .popular__cards .card .card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+}
+
+/* Membership */
+.membership {
+  background: #14142b;
+  padding: 80px 250px;
+  color: #fff;
+}
+.membership__title {
+  color: #fff;
+  font-size: 20px;
+  font-size: 30px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.membership__title span {
+  color: #c372ff;
+  font-weight: bolder;
+  font-size: 30px;
+}
+.membership__cards {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+.membership__cards .membership__card {
+  /* width: 300px; */
+  text-align: center;
+}
+.membership__cards .membership__card .card__icon {
+  margin-bottom: 20px;
+}
+.membership__cards .membership__card .card__title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/* FAQS */
+.faqs {
+  padding: 80px 250px;
+  background: #fff;
+}
+.faqs .faqs__title {
+  color: #000000;
+  font-size: 20px;
+  font-size: 30px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.faqs .faqs__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 200px;
+}
+.faqs .faqs__grid:not(:last-child) {
+  margin-bottom: 60px;
+}
+.faqs .faqs__grid .faqs___column .faqs__grid__title {
+  margin-bottom: 30px;
+  font-weight: bolder;
+}
+.faqs .faqs__grid .faqs___column .faqs__grid__content {
+  opacity: 0.5;
+}
+/* Footer */
+footer {
+  background: #14142b;
+  padding: 80px 250px;
+}
+footer .footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer__content .social__media__platform {
+  display: flex;
+  gap: 20px;
+}
+footer .footer__content .social__media__platform .social__media__container {
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 17px;
+  background: #fff;
+  color: #000;
+}
+footer .copyright {
+  text-align: center;
+  margin-top: 30px;
+  color: #6f6fa0;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 1800px) {
+  .membership__cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  header .navbar,
+  .quote__section,
+  .popular__section,
+  .membership,
+  .faqs, footer {
+    padding-inline: 150px;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .popular__section .popular__cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 1360px) {
+  .membership__cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .quote__section {
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .faqs .faqs__grid {
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  header .navbar,
+  .quote__section,
+  .popular__section,
+  .membership,
+  .faqs, footer {
+    padding-inline: 40px;
+  }
+  .popular__section .popular__cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .popular__section .popular__cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .membership__cards {
+    grid-template-columns: 1fr;
+  }
+  .props__list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .props__list .prop:not(:last-child) {
+    margin-right: 0px;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .popular__section .popular__cards {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .popular__section .popular__cards {
+    grid-template-columns: 1fr;
+  }
+  footer .footer__content {
+    flex-direction: column;
+    align-items:  center;
+    gap: 40px;
+  }
+  header {
+    padding-bottom: 30px;
+  }
+  .props__list {
+    grid-template-columns: 1fr;
+  }
+  header .navbar{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .popular__section .popular__cards {
+    grid-template-columns: 1fr;
+  }
+  header {
+    min-height: 110vh;
+  }
+  .faqs .faqs__grid {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  .header__content .main__heading {
+    font-size: 50px;
+  }
+}
 
