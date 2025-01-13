@@ -1,1 +1,15 @@
+@font-face {
+    font-family: "SourceSansPro-Regular";
+    src: url(../fonts/SourceSansPro-Regular.otf);
+}
+@font-face {
+    font-family: "SourceSansPro-Bold";
+    src: url(../fonts/SourceSansPro-Bold.otf);
+}
 
+p, span, button, div, button, input{
+    font-family: "SourceSansPro-Regular";
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "SourceSansPro-Bold";
+}
